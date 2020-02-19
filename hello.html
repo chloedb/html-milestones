@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>A first webpage</title>
+    <style>
+      body {
+        background: pink;
+        border: plum;
+      }
+      h1 {
+        color: royalblue;
+      }
+      .firstgroup:before,
+      .firstgroup:after {
+        content: "";
+        display: table;
+      }
+      .firstgroup:after {
+        clear:both;
+      }
+      /* anything after the group */
+      .firstgroup p.partone {
+        background-color:snow;
+        border: none;
+      }
+      .firstgroup p.parttwo {
+        border: none;
+        background-color:whitesmoke
+      }
+      section {
+        float: left;
+        width: 70%;
+        font-size: 25px;
+      }
+      aside {
+        float: right;
+        width: 30%
+      }
+      p {
+        font-size: 32px;
+        border: 10px solid rosybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a>Chloe deBeus <br> HTML round one</a>
+    </h1>
+    <h2>
+      <a href='https://chloedebeus.com'> visit my personal website!</a>
+      <!-- Add a website through the <a> href=linkname -->
+    </h2>
+    <div class="firstgroup">
+      <p class='partone'>
+        <!-- This is a class -->
+        Today, in class we are practicing HTML. <br>
+        I've never used it before, so I'm trying to learn. There are a lot of components.
+        <br> I created this section to emphasize classes. I used .firstgroup p.partone
+      </p>
+      <p class='parttwo'>
+        what happens when i do a second section within one header?
+      </p>
+      <section>
+        there are words here for a section
+        you can change what side they go on with float in style
+      </section>
+      <aside>
+        <strong>here is the aside! we have lines and lines.
+        how do I make it go to the next line? we add a break!
+        <br>
+        <br>
+        we change the width in the style!
+        </strong>
+      </aside>
+    </div>
+    <p>
+      This is a paragraph of text. We can make text
+      <strong>bold</strong> or <em>emphasize</em>
+    </p>
+    <footer>
+      this is my footer
+    </footer>
+  </body>
+</html>
